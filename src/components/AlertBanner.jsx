@@ -2,8 +2,16 @@ import { useState, useEffect } from "react";
 import "./AlertBanner.css";
 
 export default function AlertBanner() {
-  const [visible, setVisible] = useState(true);
-  const [countdown, setCountdown] = useState(30); 
+  const [visible, setVisible] = useState(false);
+  const [countdown, setCountdown] = useState(30);
+
+  useEffect(() => {
+    const alreadyShown = sessionStorage.getItem("alertShown");
+    if (!alreadyShown) {
+      setVisible(true);
+      sessionStorage.setItem("alertShown", "true");
+    }
+  }, []);
 
   useEffect(() => {
     if (!visible) return;

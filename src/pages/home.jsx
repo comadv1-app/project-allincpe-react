@@ -1,6 +1,9 @@
 import AlertBanner from "../components/AlertBanner";
+import { useNavigate } from "react-router-dom";
 
 export default function Home() {
+  const navigate = useNavigate();
+
   return (
     <div className="app">
               <AlertBanner />
@@ -20,11 +23,11 @@ export default function Home() {
           <h2>สวัสดีครับ ยินดีต้อนรับสู่ <br /> สาขา: Computer Engineering!</h2>
 
           <div className="menu">
-            <button>เนื้อหาการเรียน</button>
-            <button>แบบทดสอบ</button>
-            <button>เกมท้าทาย</button>
-            <button>เลือกวิชาเอก</button>
-            <button>สาขาอื่น ๆ</button>
+            <button onClick={() => navigate("/content")}>เนื้อหาการเรียน</button>
+            <button onClick={() => navigate("/quiz")}>แบบทดสอบ</button>
+            <button onClick={() => navigate("/game")}>เกมท้าทาย</button>
+            <button onClick={() => navigate("/major")}>เลือกวิชาเอก</button>
+            <button onClick={() => navigate("/other")}>สาขาอื่น ๆ</button>
           </div>
         </main>
 
