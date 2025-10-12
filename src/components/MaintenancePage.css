@@ -1,0 +1,70 @@
+.maint-wrap {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0d1117;
+  color: #fff;
+  font-family: "Segoe UI", system-ui, sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+.maint-card {
+  max-width: 600px;
+  padding: 40px 32px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  animation: fadeIn 0.4s ease-out;
+}
+
+.maint-logo {
+  width: 100px;
+  height: 100px;
+  opacity: 0.9;
+  margin-bottom: 20px;
+}
+
+.maint-card h1 {
+  font-size: 1.6rem;
+  margin-bottom: 12px;
+  color: #ffffff;
+}
+
+.maint-card p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #d3d3d3;
+  margin: 8px 0;
+}
+
+.maint-card p.th {
+  font-size: 1rem;
+  color: #bdbdbd;
+}
+
+.contact-link {
+  display: inline-block;
+  margin-top: 16px;
+  color: #4ea8ff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.contact-link:hover {
+  text-decoration: underline;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
