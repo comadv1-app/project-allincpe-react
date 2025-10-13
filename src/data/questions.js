@@ -1,0 +1,126 @@
+// src/data/questions.js
+export const pool = {
+  fundamentalsAndCore: [
+    { id: "fc-1", q: "1010₂ เท่ากับฐานสิบ", choices: ["8", "9", "10", "12"], answer: 2 },
+    { id: "fc-2", q: "โครงสร้างข้อมูลใดเหมาะกับการทำงานแบบ FIFO", choices: ["Stack", "Queue", "Tree", "Graph"], answer: 1 },
+    { id: "fc-3", q: "เวลาเฉลี่ยของ Big-O: Binary Search", choices: ["O(n)", "O(log n)", "O(n log n)", "O(1)"], answer: 1 },
+    { id: "fc-4", q: "RDBMS ใช้ภาษาหลักใดในการดึงข้อมูล", choices: ["MongoQL", "Cypher", "SQL", "GraphQL"], answer: 2 },
+    { id: "fc-5", q: "หน่วยความจำแบบใดเร็วที่สุด", choices: ["Cache", "SSD", "RAM", "HDD"], answer: 0 },
+    { id: "fc-6", q: "AND gate จะให้ผลลัพธ์เป็น 1 เมื่อ", choices: ["อินพุตทั้งหมดเป็น 1", "อินพุตทั้งหมดเป็น 0", "อินพุตต่างกัน", "อินพุตใด ๆ เป็น 1"], answer: 0 },
+    { id: "fc-7", q: "คำสั่งใดใช้ประกาศตัวแปรในภาษา C", choices: ["define", "declare", "int", "printf"], answer: 2 },
+    { id: "fc-8", q: "ในระบบไฟฟ้า ค่าความต่างศักย์วัดได้ด้วยหน่วยใด", choices: ["Ohm", "Ampere", "Volt", "Watt"], answer: 2 },
+    { id: "fc-9", q: "คำว่า Thread ในระบบปฏิบัติการหมายถึง", choices: ["กระบวนการหลัก", "หน่วยย่อยของ process", "หน่วยความจำ", "การเชื่อมต่อเครือข่าย"], answer: 1 },
+    { id: "fc-10", q: "โครงสร้างข้อมูลแบบใดเหมาะกับการค้นหาเร็ว", choices: ["Array", "Linked List", "Hash Table", "Queue"], answer: 2 },
+    { id: "fc-11", q: "OSI Layer ที่เกี่ยวข้องกับการกำหนดเส้นทางข้อมูลคือ", choices: ["Transport", "Network", "Session", "Data Link"], answer: 1 },
+    { id: "fc-12", q: "ในฐานข้อมูล Primary Key หมายถึง", choices: ["ข้อมูลหลัก", "คอลัมน์ที่ใช้ระบุเรคอร์ดไม่ซ้ำ", "ข้อมูลสำรอง", "การเข้ารหัส"], answer: 1 },
+    { id: "fc-13", q: "ฟังก์ชัน sin(x) เป็นของวิชาใดโดยตรง", choices: ["Physics", "Calculus", "Chemistry", "Programming"], answer: 1 },
+    { id: "fc-14", q: "อุปกรณ์ใดทำหน้าที่เป็นหน่วยประมวลผลกลาง", choices: ["GPU", "RAM", "CPU", "ROM"], answer: 2 },
+    { id: "fc-15", q: "Microcontroller แตกต่างจาก Microprocessor ที่มี", choices: ["Clock speed สูงกว่า", "I/O และหน่วยความจำในตัว", "การประมวลผลคู่ขนาน", "ใช้ใน Server เท่านั้น"], answer: 1 },
+    { id: "fc-16", q: "Stack ใช้หลักการใด", choices: ["FIFO", "LIFO", "LILO", "FILO"], answer: 1 },
+    { id: "fc-17", q: "การใช้คำสั่ง SQL: JOIN ใช้เพื่อ", choices: ["รวมข้อมูลจากหลายตาราง", "ลบข้อมูล", "สร้างฐานข้อมูลใหม่", "อัปเดตคีย์"], answer: 0 },
+    { id: "fc-18", q: "IPv4 มีความยาวกี่บิต", choices: ["32 บิต", "64 บิต", "128 บิต", "16 บิต"], answer: 0 },
+    { id: "fc-19", q: "ในวงจรดิจิทัล Flip-Flop ใช้เพื่อ", choices: ["เก็บข้อมูล 1 บิต", "เพิ่มแรงดันไฟฟ้า", "ลดสัญญาณรบกวน", "คูณสัญญาณนาฬิกา"], answer: 0 },
+    { id: "fc-20", q: "คำสั่ง break ในภาษา C ใช้เพื่อ", choices: ["หยุดการทำงานของโปรแกรม", "ออกจากลูป", "ข้ามรอบปัจจุบัน", "หยุดการทำงานของฟังก์ชัน"], answer: 1 },
+    { id: "fc-21", q: "หน่วยวัดความถี่สัญญาณคือ", choices: ["Hertz (Hz)", "Watt (W)", "Volt (V)", "Ampere (A)"], answer: 0 },
+    { id: "fc-22", q: "ถ้า A = {1,2,3} และ B = {3,4,5}, ค่า A ∩ B คือ", choices: ["{1,2,3,4,5}", "{3}", "{1,2}", "{4,5}"], answer: 1 },
+  ],
+
+  majors: {
+    robotics: [
+      { id: "rb-1", q: "ROS ย่อมาจากอะไร", choices: ["Robot Open Source", "Robotic Operating System", "Robot OSI", "Robotics Open Software"], answer: 1 },
+      { id: "rb-2", q: "ตัวควบคุมวงปิด (closed-loop) ต้องมีองค์ประกอบใด", choices: ["Noise", "Setpoint", "Feedback", "Observer"], answer: 2 },
+      { id: "rb-3", q: "เซนเซอร์ใดใช้ตรวจจับระยะทางด้วยคลื่นเสียง", choices: ["Infrared", "Ultrasonic", "Gyroscope", "Accelerometer"], answer: 1 },
+      { id: "rb-4", q: "Actuator ทำหน้าที่", choices: ["ประมวลผลข้อมูล", "ควบคุมการเคลื่อนไหว", "ตรวจจับสภาพแวดล้อม", "สื่อสารกับผู้ใช้"], answer: 1 },
+      { id: "rb-5", q: "หน่วยประมวลผลยอดนิยมในหุ่นยนต์คือ", choices: ["8051", "Raspberry Pi", "Arduino Uno", "ทั้งข้อ 2 และ 3"], answer: 3 },
+      { id: "rb-6", q: "ระบบหุ่นยนต์อุตสาหกรรมมักใช้โครงสร้างใด", choices: ["Serial", "Parallel", "Both", "None"], answer: 2 },
+      { id: "rb-7", q: "Inverse Kinematics ใช้เพื่อ", choices: ["หามุมข้อต่อให้ปลายแขนอยู่ตำแหน่งที่ต้องการ", "จำลองแรงโน้มถ่วง", "ประเมินพลังงาน", "ปรับแรงบิดของมอเตอร์"], answer: 0 },
+    ],
+    software: [
+      { id: "se-1", q: "แนวทาง CI/CD ใช้เพื่อ", choices: ["ลด Latency เครือข่าย", "อัตโนมัติ build/test/deploy", "จัดการ Memory", "ทำ Load Balancing"], answer: 1 },
+      { id: "se-2", q: "Agile Methodology เน้นสิ่งใด", choices: ["เอกสารครบถ้วน", "ยืดหยุ่นและปรับเปลี่ยนได้", "แผนตายตัว", "เน้นโครงสร้างลำดับ"], answer: 1 },
+      { id: "se-3", q: "UML ใช้เพื่อ", choices: ["ทดสอบโค้ด", "เขียน Diagram ของระบบ", "บริหารเวอร์ชัน", "คอมไพล์โปรแกรม"], answer: 1 },
+      { id: "se-4", q: "Unit Test ใช้ตรวจสอบระดับใด", choices: ["ทั้งระบบ", "ส่วนติดต่อผู้ใช้", "ฟังก์ชันย่อยแต่ละส่วน", "ระบบฐานข้อมูล"], answer: 2 },
+      { id: "se-5", q: "Design Pattern ที่ใช้บ่อยที่สุดคือ", choices: ["Observer", "Singleton", "Adapter", "Bridge"], answer: 1 },
+      { id: "se-6", q: "Scrum มีบทบาทหลักกี่ตำแหน่ง", choices: ["2", "3", "4", "5"], answer: 1 },
+    ],
+    security: [
+      { id: "sec-1", q: "OWASP A1/A2 เกี่ยวข้องกับ", choices: ["Cryptography", "Injection/Authentication", "Availability", "Logging"], answer: 1 },
+      { id: "sec-2", q: "Firewall ทำหน้าที่หลักคือ", choices: ["เข้ารหัสข้อมูล", "กรองการรับส่งข้อมูลเครือข่าย", "ตรวจสอบไวรัส", "บีบอัดไฟล์"], answer: 1 },
+      { id: "sec-3", q: "การโจมตีแบบ Phishing คือ", choices: ["ขโมยรหัสผ่านด้วยอีเมลหลอก", "โจมตีฐานข้อมูล", "เข้ารหัสไฟล์เพื่อเรียกค่าไถ่", "ดักฟังการสื่อสาร"], answer: 0 },
+      { id: "sec-4", q: "SSL/TLS ใช้ในระดับใดของ OSI", choices: ["Application", "Transport", "Network", "Session"], answer: 1 },
+      { id: "sec-5", q: "Hash function มีคุณสมบัติใด", choices: ["สามารถย้อนกลับได้", "ให้ผลลัพธ์ยาวเท่ากันเสมอ", "ใช้เข้ารหัสแบบสมมาตร", "ใช้สร้าง public key"], answer: 1 },
+      { id: "sec-6", q: "การตรวจสอบตัวตนแบบสองขั้นตอนเรียกว่า", choices: ["2FA", "OTP", "PIN", "SSO"], answer: 0 },
+    ],
+    ai: [
+      { id: "ai-1", q: "ฟังก์ชันกระตุ้นที่นิยมใน hidden layer", choices: ["ReLU", "Softmax", "Sigmoid", "Linear"], answer: 0 },
+      { id: "ai-2", q: "Machine Learning แบ่งเป็นกี่ประเภทหลัก", choices: ["2", "3", "4", "5"], answer: 1 },
+      { id: "ai-3", q: "Loss Function ใช้เพื่อ", choices: ["วัดความคลาดเคลื่อนของโมเดล", "เร่งความเร็วการเรียนรู้", "ลดขนาดข้อมูล", "สร้างฟีเจอร์ใหม่"], answer: 0 },
+      { id: "ai-4", q: "Gradient Descent ใช้ในการ", choices: ["เพิ่มค่าพารามิเตอร์", "หาค่าที่ทำให้ Loss ต่ำสุด", "ทำ Normalization", "ตรวจสอบ Bias"], answer: 1 },
+      { id: "ai-5", q: "CNN ใช้เด่นในงานใด", choices: ["การแปลภาษา", "การรู้จำภาพ", "การคาดการณ์เวลา", "การวิเคราะห์เสียง"], answer: 1 },
+      { id: "ai-6", q: "K-Means เป็นอัลกอริทึมแบบ", choices: ["Supervised", "Unsupervised", "Reinforcement", "Semi-supervised"], answer: 1 },
+    ],
+  },
+
+  others: {
+    cs: [
+    { id: "cs-1", q: "คุณสมบัติของ NP-Complete คือ", choices: ["แก้ได้ O(1)", "ลดรูปเป็นกันและกันได้", "ต้องเป็นปัญหา BPP", "เป็น sub-class ของ P"], answer: 1 },
+    { id: "cs-2", q: "ภาษาใดถือว่าเป็น low-level language", choices: ["Assembly", "Python", "Java", "C#"], answer: 0 },
+    { id: "cs-3", q: "Turing Machine ใช้ศึกษาเรื่องใด", choices: ["Network", "Computation", "Database", "Cybersecurity"], answer: 1 },
+    { id: "cs-4", q: "Time Complexity O(n²) มักพบในอัลกอริทึมใด", choices: ["Bubble Sort", "Merge Sort", "Binary Search", "Quick Sort"], answer: 0 },
+    { id: "cs-5", q: "Stack ใช้หลักการใด", choices: ["FIFO", "LIFO", "Random Access", "Round Robin"], answer: 1 },
+    { id: "cs-6", q: "Graph แบบมีทิศทางเรียกว่า", choices: ["Undirected Graph", "Directed Graph", "Weighted Graph", "Dynamic Graph"], answer: 1 },
+    { id: "cs-7", q: "หน่วยที่เล็กที่สุดของข้อมูลคือ", choices: ["Bit", "Byte", "Word", "Nibble"], answer: 0 },
+
+    ],
+    it: [
+    { id: "it-1", q: "ITIL เกี่ยวข้องกับ", choices: ["Service Management", "Data Mining", "Circuit Design", "Cryptanalysis"], answer: 0 },
+    { id: "it-2", q: "Cloud Computing แบบ IaaS หมายถึง", choices: ["Infrastructure as a Service", "Information as a Service", "Integration as a Service", "Interface as a Service"], answer: 0 },
+    { id: "it-3", q: "โปรโตคอลที่ใช้รับส่งอีเมลคือ", choices: ["HTTP", "SMTP", "FTP", "SSH"], answer: 1 },
+    { id: "it-4", q: "ระบบสำรองข้อมูลอัตโนมัติเป็นส่วนหนึ่งของ", choices: ["IT Security", "Disaster Recovery", "Database Management", "Network Monitoring"], answer: 1 },
+    { id: "it-5", q: "หน่วยเก็บข้อมูลที่เร็วที่สุดในระบบคอมพิวเตอร์คือ", choices: ["Cache", "HDD", "SSD", "RAM"], answer: 0 },
+    { id: "it-6", q: "Firewall มีหน้าที่หลักคือ", choices: ["ควบคุมการรับส่งข้อมูลเครือข่าย", "เก็บข้อมูลผู้ใช้", "เข้ารหัสไฟล์", "สแกนไวรัส"], answer: 0 },
+    { id: "it-7", q: "DNS ทำหน้าที่", choices: ["แปลงชื่อโดเมนเป็น IP", "แปลงไฟล์เป็น Binary", "จัดเก็บรหัสผ่าน", "ตรวจสอบสิทธิ์ผู้ใช้"], answer: 0 },
+
+    ],
+    data: [
+    { id: "data-1", q: "ค่าชี้วัดที่ไวต่อ Outlier มากที่สุด", choices: ["Mean", "Median", "Mode", "IQR"], answer: 0 },
+    { id: "data-2", q: "ขั้นตอนแรกของ Data Analysis คือ", choices: ["Data Cleaning", "Data Collection", "Data Visualization", "Modeling"], answer: 1 },
+    { id: "data-3", q: "เครื่องมือใดนิยมใช้ในการวิเคราะห์ข้อมูลเชิงสถิติ", choices: ["Excel", "Photoshop", "Illustrator", "AutoCAD"], answer: 0 },
+    { id: "data-4", q: "Scatter Plot เหมาะกับการแสดง", choices: ["ความสัมพันธ์ระหว่างสองตัวแปร", "สัดส่วนของหมวดหมู่", "การแจกแจงของค่าเดียว", "ข้อมูลตามเวลา"], answer: 0 },
+    { id: "data-5", q: "K-Means เป็นอัลกอริทึมประเภท", choices: ["Supervised", "Unsupervised", "Reinforcement", "Hybrid"], answer: 1 },
+    { id: "data-6", q: "Correlation มีค่าช่วงระหว่าง", choices: ["-1 ถึง 1", "0 ถึง 1", "-∞ ถึง ∞", "0 ถึง 100"], answer: 0 },
+    { id: "data-7", q: "ค่าที่ใช้แบ่งข้อมูลออกเป็น 4 ส่วนเท่ากันคือ", choices: ["Quartile", "Percentile", "Decile", "Median"], answer: 0 },
+
+    ],
+    ai: [
+    { id: "ai-1", q: "ฟังก์ชันกระตุ้นที่นิยมใน hidden layer", choices: ["ReLU", "Softmax", "Sigmoid", "Linear"], answer: 0 },
+    { id: "ai-2", q: "โมเดลใดใช้หลัก Reinforcement Learning", choices: ["AlphaGo", "SVM", "KNN", "Decision Tree"], answer: 0 },
+    { id: "ai-3", q: "Loss Function ใช้เพื่อ", choices: ["วัดความคลาดเคลื่อนของโมเดล", "เพิ่มความเร็ว GPU", "แปลงข้อมูลเป็น Vector", "ลดขนาด Dataset"], answer: 0 },
+    { id: "ai-4", q: "Supervised Learning ต้องมี", choices: ["Label", "Noise", "Unlabeled Data", "Hidden Variable"], answer: 0 },
+    { id: "ai-5", q: "CNN ใช้เด่นในงานด้านใด", choices: ["Image Processing", "Speech Recognition", "Text Mining", "Database Indexing"], answer: 0 },
+    { id: "ai-6", q: "คำว่า Overfitting หมายถึง", choices: ["โมเดลจำข้อมูลฝึกมากเกินไป", "ข้อมูลน้อยเกินไป", "ผลลัพธ์ไม่เสถียร", "โมเดลยังไม่ converge"], answer: 0 },
+    { id: "ai-7", q: "RNN โดดเด่นในงานลักษณะใด", choices: ["ลำดับข้อมูลต่อเนื่อง", "ภาพนิ่ง", "ข้อมูลตาราง", "การแปลภาษา SQL"], answer: 0 },
+
+    ],
+    security:[
+    { id: "sec-1", q: "OWASP A1/A2 เกี่ยวข้องกับ", choices: ["Cryptography", "Injection/Authentication", "Availability", "Logging"], answer: 1 },
+    { id: "sec-2", q: "การโจมตีแบบ DDoS ส่งผลต่อ", choices: ["Confidentiality", "Availability", "Integrity", "Authorization"], answer: 1 },
+    { id: "sec-3", q: "มัลแวร์ที่เรียกค่าไถ่ข้อมูลคือ", choices: ["Trojan", "Ransomware", "Spyware", "Worm"], answer: 1 },
+    { id: "sec-4", q: "Public Key ใช้ในระบบใด", choices: ["Symmetric Encryption", "Asymmetric Encryption", "Hashing", "Encoding"], answer: 1 },
+    { id: "sec-5", q: "การทำ Penetration Test คือ", choices: ["ตรวจสอบช่องโหว่โดยผู้เชี่ยวชาญ", "สแกนไวรัส", "ทดสอบระบบไฟล์", "กู้คืนข้อมูล"], answer: 0 },
+    { id: "sec-6", q: "ไฟล์ .pem มักเกี่ยวข้องกับ", choices: ["Private/Public Key", "Image Encoding", "Data Compression", "Executable File"], answer: 0 },
+    { id: "sec-7", q: "SSL/TLS ทำหน้าที่หลักคือ", choices: ["เข้ารหัสข้อมูลระหว่างส่ง", "ป้องกันไวรัส", "ตรวจจับผู้บุกรุก", "จำกัดความเร็วอินเทอร์เน็ต"], answer: 0 },
+
+    ],
+    graphics: [
+    { id: "cg-1", q: "GPU ถูกออกแบบมาเพื่อ", choices: ["ประมวลผลทั่วไป", "ประมวลผลกราฟิกขนาน", "จัดเก็บข้อมูล", "สื่อสารกับระบบปฏิบัติการ"], answer: 1 },
+    { id: "cg-2", q: "Frame rate หน่วยคือ", choices: ["fps", "dpi", "ppi", "rpm"], answer: 0 },
+    { id: "cg-3", q: "Texture Mapping ใช้เพื่อ", choices: ["เพิ่มแสง", "เพิ่มรายละเอียดพื้นผิว", "เพิ่มความเร็ว", "ลดขนาดไฟล์"], answer: 1 },
+    { id: "cg-4", q: "Game Engine เช่น Unity ใช้ภาษาอะไรได้ทั่วไป", choices: ["C#", "Python", "Java", "Go"], answer: 0 },
+    { id: "cg-5", q: "Shader ใช้เพื่อ", choices: ["ประมวลผลภาพและแสง", "ควบคุมเสียง", "จัดการหน่วยความจำ", "บีบอัดไฟล์"], answer: 0 },
+    { id: "cg-6", q: "Physics Engine ใช้จำลองอะไรในเกม", choices: ["แรงโน้มถ่วงและการชน", "สีของวัตถุ", "เสียงสะท้อน", "AI พฤติกรรม"], answer: 0 },
+    { id: "cg-7", q: "Frame Buffer ใช้สำหรับ", choices: ["เก็บข้อมูลภาพก่อนแสดงผล", "เก็บข้อมูลเสียง", "เก็บโมเดลสามมิติ", "เก็บ Script ของเกม"], answer: 0 },
+
+    ],
+  },
+};

@@ -331,3 +331,185 @@ body {
   }
 }
 
+/* -------------------------------- Other --------------------------------- */
+.track-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 8px auto 14px;
+  max-width: 680px;
+  justify-content: center;
+}
+.track-chip {
+  background: #eef4ff;
+  color: #0d1b2a;
+  border: 1px solid #bcd1ff;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: .9rem;
+  cursor: pointer;
+}
+.track-chip.active {
+  background: #1f6de5;
+  color: #fff;
+  border-color: #1f6de5;
+  box-shadow: 0 4px 12px rgba(31,109,229,.18);
+}
+
+.section-toggle {
+  width: 100%;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+  background: #1f6de5;
+  color: #fff;
+  padding: 12px 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.section-toggle .chev { 
+  transition: transform .2s ease; 
+}
+
+.section-toggle .chev.up { 
+  transform: rotate(180deg);
+ }
+
+.section-body {
+  padding: 14px 16px 16px;
+  animation: fadeSlide .25s ease;
+  text-align: left; 
+}
+
+.major-desc { 
+  margin: 6px 0 10px; 
+  text-align: left; 
+}
+
+.roles-title {
+  margin-top: 4px;
+  font-weight: 700;
+  color: #0d1b2a;
+  text-align: left; 
+}
+.roles-list {
+  margin: 6px 0 10px 18px;
+}
+.roles-list li { margin: 2px 0; }
+
+.tags { 
+  display: flex; 
+  gap: 8px; 
+  flex-wrap: wrap; 
+}
+
+.tag {
+  background: #f1f6ff;
+  border: 1px solid #cfe0ff;
+  color: #0d1b2a;
+  padding: 3px 8px;
+  border-radius: 8px;
+  font-size: .8rem;
+}
+
+@keyframes fadeSlide {
+  from { opacity: 0; transform: translateY(-4px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.more-btn {
+  display: inline-block;
+  margin-top: 8px;
+  background: #1f6de5;
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 10px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform .05s ease, box-shadow .15s ease, background .2s ease;
+}
+
+.more-btn:hover { 
+  box-shadow: 0 6px 14px rgba(31,109,229,.18); 
+}
+
+.more-btn:active { 
+  transform: translateY(1px); 
+}
+
+/* ------------------------------ Major -------------------------------- */
+.ratings p {
+  margin: 4px 0;
+  font-weight: 500;
+  color: #0d1b2a;
+  text-align: left;
+}
+
+.roles-title {
+  margin-top: 8px;
+  font-weight: 700;
+  color: #0d1b2a;
+  text-align: left;
+}
+
+.roles-list {
+  margin: 6px 0 10px 18px;
+  text-align: left;
+}
+
+.more-btn {
+  display: inline-block;
+  margin-top: 10px;
+  background: #1f6de5;
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 10px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.more-btn:hover { 
+  box-shadow: 0 6px 14px rgba(31,109,229,.18); 
+}
+
+/* ----------------------------- QuizPlay ----------------------------*/
+.choice-btn { 
+  border: 1px solid #d5deff; 
+  border-radius: 10px; 
+  padding: 10px 12px; 
+  text-align: left; 
+  background: #fff; 
+  cursor: pointer; 
+}
+
+.choice-btn:hover { 
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+ }
+
+.choice-btn.is-selected { 
+  border-color: #2249ff; 
+  background: #eef3ff; 
+}
+
+.bar-success {
+  background: #1f6de5;      
+  transition: width .25s ease;
+}
+.breakdown-list {
+  margin-top: 10px;
+  padding-left: 0;
+  list-style: none;
+}
+.breakdown-list li {
+  margin: 4px 0;
+  font-size: .95rem;
+}
+.breakdown-key {
+  display: inline-block;
+  min-width: 120px;          
+  font-weight: 600;
+  color: #0b1b2f;
+}
