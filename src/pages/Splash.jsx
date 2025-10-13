@@ -9,7 +9,7 @@ export default function Splash() {
   useEffect(() => {
     if (sessionStorage.getItem("seenSplash")) return navigate("/home", { replace: true });
         sessionStorage.setItem("seenSplash", "1");
-        const t = setTimeout(() => navigate("/home"), 3000);
+        const t = setTimeout(() => navigate("/home"), 2000);
     return () => clearTimeout(t);
   }, [navigate]);
 

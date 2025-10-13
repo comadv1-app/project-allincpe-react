@@ -40,8 +40,7 @@ export default function Quiz() {
           <button onClick={() => navigate("/home")}><i className="fi fi-rr-home"></i><span>Home</span></button>
           <button onClick={() => navigate("/content")}><i className="fi fi-rr-book-alt"></i><span>Content</span></button>
           <button onClick={() => navigate("/game")}><i className="fi fi-rr-gamepad"></i><span>Game</span></button>
-          <button onClick={() => navigate("/major")}><i className="fi fi-rr-graduation-cap"></i><span>Major</span>
-          </button>
+          <button onClick={() => navigate("/major")}><i className="fi fi-rr-graduation-cap"></i><span>Major</span></button>
           <button onClick={() => navigate("/other")}><i className="fi fi-rr-menu-dots"></i><span>Others</span></button>
         </nav>
       </div>

@@ -144,9 +144,6 @@ export default function Other() {
         </main>
 
         <nav className="bottom-nav">
-          <button onClick={() => navigate(-1)} aria-label="Back">
-            ←
-          </button>
           <button onClick={() => navigate("/home")}>
             <i className="fi fi-rr-home"></i>
             <span>Home</span>
@@ -158,6 +155,10 @@ export default function Other() {
           <button onClick={() => navigate("/game")}>
             <i className="fi fi-rr-gamepad"></i>
             <span>Game</span>
+          </button>
+          <button onClick={() => navigate("/major")}>
+            <i className="fi fi-rr-graduation-cap"></i>
+            <span>Major</span>
           </button>
           <button onClick={() => navigate("/other")} className="active">
             <i className="fi fi-rr-menu-dots"></i>
