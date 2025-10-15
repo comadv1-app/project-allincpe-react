@@ -67,7 +67,7 @@ export default function Game() {
             </p>
             <div className="warn">
               <h4>⚠️ announce</h4>
-              <p>🛈 Game under development</p>
+              <p>Game under development</p>
               <p>เกมยังไม่สมบูรณ์</p>
             </div>
 
