@@ -8,10 +8,14 @@ import Content from "./pages/content";
 import Quiz from "./pages/quiz";
 import Game from "./pages/game";
 import TimeChallenge from "./pages/game/TimeChallenge";
+import CodePractice from "./pages/game/codePractice";
+import CodeTimer from "./pages/game/CodeTimer";
 import Binary from "./pages/game/Binary";
 import Major from "./pages/major";
 import Other from "./pages/other";
 import QuizPlay from "./pages/quizPlay";
+
+import CodeRunDemo from "./pages/game/CodeRunDemo";
 
 export default function App() {
   const MAINTENANCE = import.meta.env.VITE_MAINTENANCE === "true";
@@ -26,10 +30,14 @@ export default function App() {
       <Route path="/quiz/play" element={<QuizPlay />} />
       <Route path="/game" element={<Game />} />
       <Route path="/game/time" element={<TimeChallenge />} />
+      <Route path="/game/code-practice" element={<CodePractice />} />
+      <Route path="/game/code-timer" element={<CodeTimer />} />
       <Route path="/game/binary" element={<Binary />} />
       <Route path="/major" element={<Major />} />
       <Route path="/other" element={<Other />} />
       <Route path="*" element={<Navigate to="/home" replace />} />
+
+      <Route path="/game/code-run-demo" element={<CodeRunDemo />} />
     </Routes>
   );
 }

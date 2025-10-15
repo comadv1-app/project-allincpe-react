@@ -611,3 +611,20 @@ body {
 .chev.up {
   transform: rotate(180deg);
 }
+
+.warn {
+  border: 1.5px solid #ff0000;    
+  background-color: #fff8e1;      
+  color: #ff3e04;
+  padding: 5px 5px;             
+  border-radius: 6px;             
+  margin-top: 10px;
+  font-size: 0.9rem;              
+  line-height: 1.4;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+}
+
+.warn:hover {
+  background-color: #fed13d;          
+  border-color: #ffa726;
+}

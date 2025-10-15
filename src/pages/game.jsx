@@ -65,6 +65,11 @@ export default function Game() {
               โจทย์เขียนและแก้โค้ด Java, Python, C พร้อมทดสอบอัตโนมัติ
               มีทั้งง่ายและยาก โหมดฝึก (5 ข้อ) และโหมดจับเวลา (10 ข้อ)
             </p>
+            <div className="warn">
+              <h4>⚠️ announce</h4>
+              <p>🛈 Game under development</p>
+              <p>เกมยังไม่สมบูรณ์</p>
+            </div>
 
             <button
               className="section-toggle"
@@ -88,16 +93,16 @@ export default function Game() {
             )}
 
             <div style={{ textAlign: "center", marginTop: 12 }}>
-              <button className="more-btn">Practice</button>
+              <button className="more-btn" onClick={() => navigate("/game/code-practice")}>Practice</button>
               <button
                 className="more-btn"
                 style={{ background: "#0b1b2f", marginLeft: 10 }}
-              >
+              onClick={() => navigate("/game/code-timer")}>
                 Timer
               </button>
             </div>
           </div>
-          <div className="section-card">
+          <div className="section-card" >
             <h3>Binary</h3>
             <p>
               แข่งแปลงเลขฐาน 2/10/16 (ตอบเร็วได้โบนัสเวลา) —
